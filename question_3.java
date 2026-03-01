@@ -1,7 +1,50 @@
 import java.util.Scanner;
 
+/*******************************************************************
+* I declare and confirm the following:
+* - I have not discussed this program code with anyone other than my
+* instructor or the teaching assistants assigned to this course.
+* - I have not used programming code obtained from someone else,
+* or any unauthorised sources, including the Internet, either
+* modified or unmodified.
+* - If any source code or documentation used in my program was
+* obtained from other sources, like a text book or course notes,
+* I have clearly indicated that with a proper citation in the
+* comments of my program.
+* - I have not designed this program in such a way as to defeat or
+* interfere with the normal operation of the supplied grading code.
+*
+* <Malik Hannah>
+* <W30626500>
+********************************************************************/
+
 public class question_3 {
 
+/*****************************<max>****************************
+* Description: Recursively finds and returns the maximum value in a specified portion of an integer array using a divide-and-conquer approach.
+*
+* Parameters: 
+*   int [] A - the array containing integer values
+*   int left - the starting index of the portion to examine
+*   int right - the ending index of the portion to examine
+*
+* Pre: 
+*   - A is not null
+*   - A.length > 0
+*   - 0 <= left <= right < A.length
+*   - The array A has been properly initialized
+*
+* Post:
+*   - The array A is not modified
+*   - Returns the largest value stored betwen indices left and right (inclusive).
+*
+* Returns: 
+*   - An intger representing the maximum value in A
+*   - From index left to index right
+*
+* Called by: Called by main()
+* Calls: Calls itself recursively
+************************************************************************/
     public static int max(int [] A, int left, int right)
     {
         // Base Case: Only one element left
